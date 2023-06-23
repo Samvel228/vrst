@@ -4,12 +4,12 @@
 .portfolio {
 }
 .portfolio__body {
+	width: 100%;
 }
 
 .navigation {
 	display: flex;
 	justify-content: right;
-
 }
 .navigation__link {
 	margin-right: 33px;
@@ -48,7 +48,7 @@
 	color: white;
 	border: none;
 	background: #FF6464;
-	width: 208px;
+	max-width: 208px;
 	height: 47px;
 	cursor: pointer;
 }
@@ -75,10 +75,11 @@
 }
 .recent-posts {
 	background-color: #EDF7FA;
+	width: 100%;
 }
 .recent-posts__container {
 	max-width: 860px;
-	margin: auto;
+	margin: 0px auto;
 }
 .recent-posts__header {
 	position: relative;
@@ -240,4 +241,16 @@
 	border:none;
 }
 .footer__copyright {
+}
+
+@media (max-width:860px){
+	[class*="container"]{
+		max-width: 530px;
+	}
+}
+
+@media (max-width:530px){
+	[class*="container"]{
+		max-width: 320px;
+	}
 }
